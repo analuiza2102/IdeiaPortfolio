@@ -1,0 +1,118 @@
+/* === Estilo geral da página Currículo === */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  main section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-mode main section {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.03);
+  }
+  
+  /* Título principal */
+  main h1 {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  /* Subtítulo */
+  main p.text-muted {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Títulos das seções */
+  main section h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  /* Texto das seções */
+  main section p,
+  main section ul {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  /* Listas */
+  main section ul {
+    padding-left: 1.2rem;
+  }
+  
+  /* Cada item de experiência */
+  .experience {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Botões dos links (LinkedIn, GitHub, etc) */
+  main .btn {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+  
+  /* Hover nos botões */
+  main .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* === Modo escuro === */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode main h1,
+  body.dark-mode main h2,
+  body.dark-mode main p,
+  body.dark-mode main li {
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode main p.text-muted {
+    color:#cccccc!important;
+  }
+  
+  /* Botões no modo escuro */
+  body.dark-mode .btn-outline-primary {
+    border-color: #66d9ef;
+    color: #66d9ef;
+  }
+  
+  body.dark-mode .btn-outline-primary:hover {
+    background-color: #66d9ef;
+    color: #000;
+  }
+  
+  body.dark-mode .btn-outline-dark {
+    border-color: #aaa;
+    color: #aaa;
+  }
+  
+  body.dark-mode .btn-outline-dark:hover {
+    background-color: #aaa;
+    color: #000;
+  }
+  
+  body.dark-mode .btn-outline-success {
+    border-color: #7ad97a;
+    color: #7ad97a;
+  }
+  
+  body.dark-mode .btn-outline-success:hover {
+    background-color: #7ad97a;
+    color: #000;
+  }
+  

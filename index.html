@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfólio de Ana Luiza Guimarães Luizão, estudante de Engenharia de Computação na UFMG. Conhecimentos em HTML, CSS, JavaScript, Python e Java. Projetos em desenvolvimento.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Luiza G. Luizão | Desenvolvedora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+
+ <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-white fixed-top shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="fas fa-desktop fa-lg text-dark"></i>
+        <div class="logo-text"  href="/index.html">
+          <span class="name">ANA LUIZA GUIMARÃES LUIZÃO</span><br />
+          <span class="dev">Developer</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <ul class="navbar-nav d-none d-lg-flex flex-row gap-3">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Projetos/projetos.html">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Curriculo/Curriculo.html">Currículo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Botões (Hambúrguer no mobile e tema no geral) -->
+      <div class="d-flex align-items-center">
+        <button class="menu-toggle d-lg-none" id="openMenu" aria-label="Abrir menu">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <button id="toggleTheme" class="btn btn-sm btn-outline-secondary ms-2">🌙</button>
+      </div>
+
+    </div>
+
+        <!-- MENU MOBILE FULLSCREEN -->
+    <div id="mobileMenu" class="mobile-menu">
+      <button id="closeMenu" class="close-btn" aria-label="Fechar menu">
+        <i class="fas fa-times fa-lg"></i>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="./Projetos/projetos.html">Projetos</a></li>
+        <li><a href="./Curriculo/Curriculo.html">Currículo</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li>
+          <button id="toggleThemeMobile" class="btn btn-outline-light mt-4">
+            🌙 Modo Escuro
+          </button>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+
+
+    <!-- HERO SECTION -->
+    <header class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+          <h1 class="display-4 fw-bold">
+            <span id="typed-text"></span>
+          </h1>          
+        <p class="lead">Cada projeto é uma troca: aprendo, cresço e coloco verdade em cada linha de código.
+        </p>
+        <a href="#portfolio" class="btn btn-outline-primary mt-3">Ver Projetos</a>
+        </div>
+    </header>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="sobre-section py-3 ">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <!-- Texto -->
+          <div class="col-lg-7">
+            <h2 class="mb-4">Sobre Mim</h2>
+            <p>
+              Olá! Me chamo <strong>Ana Luiza G. Luizão</strong>, sou desenvolvedora e analista de sistemas com mais de 3 anos de experiência.  
+            </p>
+            <p>
+              Tenho foco em desenvolvimento web, automação de processos e suporte técnico.
+            </p>
+            <p>
+              Acredito na acessibilidade e na inclusão digital, e busco sempre criar soluções que sejam úteis e funcionais para todos.
+            </p>
+            <p>
+              Trabalho com criação de interfaces responsivas utilizando HTML, CSS, React e Bootstrap. Também atuo com análise de dados no Power BI, integração de APIs e campanhas no Google Ads. 
+            </p>
+            <p>
+              Atualmente, curso Ciência da Computação pela UNIP e sou certificada em Front-end, DevOps e Inovação pela Alura. 
+            </p>
+          </div>
+
+          <!-- Ilustração -->
+          <div class="col-lg-5 text-center mt-3 mt-lg-0">
+            <img src="Img/ana-luiza.jpg" alt="Ilustração Ana Luiza" class="img-fluid rounded shadow-sm" style="max-width: 300px;">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS EM DESTAQUE -->
+    <section id="portfolio" class="projetos-section py-5">
+      <div class="container">
+        <h2 class="mb-4 text-center">Projetos em Destaque</h2>
+        <p class="text-center mb-5">Conheça alguns projetos que refletem minha experiência em desenvolvimento, dados e design.</p>
+
+        <div class="row g-4">
+          <!-- Projeto AluraPlay -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card d-flex flex-column h-100 shadow-sm border-0">
+              <img src="Img/Projetos/Alura Play.png" class="card-img-top" alt="Projeto 1">
+              <div class="card-body">
+                <h5 class="card-title">Alura Play</h5>
+                <p class="card-text">Página inspirada no estilo da plataforma de vídeos Alura.Projeto voltado para organização, responsividade e prática de Flexbox, Grid e boas práticas de semântica.</p>
+                <span class="badge bg-primary">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
+                <span class="badge bg-success">Responsivo</span>
+              </div>
+              <div class="card-footer bg-white border-0 mt-auto">
+                <a href="https://analuiza2102.github.io/Alura-Play/" class="btn btn-outline-primary w-100" target="_blank">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2 - Dashboard Despesas -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card d-flex flex-column h-100 shadow-sm border-0">
+              <img src="Img/Projetos/Projeção Despesas - Contas A Pagar - Empresa.png" class="card-img-top" alt="Dashboard Power BI Despesas">
+              <div class="card-body">
+                <h5 class="card-title">Dashboard Financeiro Power BI</h5>
+                <p class="card-text">Painel de controle visual com análise de custos, projeções e categorização de despesas usando dados reais da empresa.</p>
+                <span class="badge bg-warning text-dark">Power BI</span>
+                <span class="badge bg-dark">SQL</span>
+              </div>
+              <div class="card-footer bg-white border-0 mt-auto">
+                <a href="https://github.com/analuiza2102/Dashboard-Power-BI-Proje-o-de-Despesas-Contas-a-Pagar-" class="btn btn-outline-primary w-100" target="_blank">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="https://i.postimg.cc/Y9Mr5BTg/image.png" class="card-img-top" alt="Landing Page InsumoVet">
+            <div class="card-body">
+              <h5 class="card-title">Landing Page InsumoVet</h5>
+              <p class="card-text">Página de apresentação institucional da distribuidora InsumoVet, com foco em responsividade e clareza de proposta.</p>
+              <span class="badge bg-primary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+              <span class="badge bg-info">JavaScript</span>
+              <span class="badge bg-warning text-dark">Bootstrap</span>
+              <span class="badge bg-success">Responsivo</span>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="https://analuiza2102.github.io/landingpageInsumoVet/" class="btn btn-outline-primary w-100" target="_blank">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+  <section id="contato" class="contato-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Fale Comigo</h2>
+      <p class="text-center mb-5">Entre em contato para parcerias, dúvidas ou oportunidades.</p>
+
+      <div class="row">
+        <!-- Formulário -->
+        <div class="col-md-6">
+          <form action="https://formspree.io/f/mjkwbdqk" method="POST">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" name="_replyto" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+
+            <p id="form-status" class="mt-3"></p>
+          </form>
+        </div>
+
+        <!-- Informações diretas -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <p><i class="fas fa-envelope me-2"></i> analuizaguimaraesluizao@gmail.com</p>
+          <p><i class="fab fa-whatsapp me-2"></i> <a href="https://wa.me/5514998162191" target="_blank">WhatsApp</a></p>
+          <p><i class="fab fa-github me-2"></i> <a href="https://github.com/analuiza2102" target="_blank">GitHub</a></p>
+          <p><i class="fab fa-linkedin me-2"></i> <a href="https://www.linkedin.com/in/analuizagluiz%C3%A3o/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <footer>
+      <div class="container text-center py-4">
+        <p class="mb-0">Desenvolvido por Ana Luiza Guimarães Luizão &copy; 2025</p>
+        <div class="social-icons mt-2">
+          <a href="https://www.linkedin.com/in/analuizagluiz%C3%A3o/" target="_blank" class="social-link text-dark me-3">
+            <i class="fab fa-linkedin me-2"></i>
+          </a>          
+    </footer>
+
+    
+  
+    
+    <!-- JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Biblioteca do efeito de digitação -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="Js/script.js"></script>
+
+
+</body>
+</html>

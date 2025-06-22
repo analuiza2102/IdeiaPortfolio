@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+/* Corrige subtítulo da seção no modo escuro */
+    body.dark-mode .projetos-section p.text-muted,
+    body.dark-mode main p.text-muted {
+    color: #ccc !important;
+    }
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Espaçamento entre os cards */
+#projetos .row.g-4 {
+  row-gap: 3rem; /* aumenta o espaço vertical entre linhas */
+}
+
+/* Espaçamento geral da seção Projetos */
+#projetos {
+  padding-top: 100px; /* já deve estar ok */
+  padding-bottom: 80px; /* aumenta espaço antes do footer */
+}
+
+/* Espaço no footer */
+footer {
+  margin-top: 40px; /* separa do conteúdo acima */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+

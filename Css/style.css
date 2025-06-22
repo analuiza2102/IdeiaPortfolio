@@ -1,0 +1,535 @@
+/* === Reset simples === */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  /* === Navbar === */
+  .navbar-brand {
+    color: #3b3b3b;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    margin-left: 1rem;
+    color: #666 !important;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #0077cc !important;
+  }
+
+  /* === Seções base (padrão claro) === */
+  section {
+    background-color: #f8f9fa;
+  }
+
+  /* === Sobre mim e Projetos se ajustam a esse padrão === */
+  .sobre-section,
+  .projetos-section {
+    background-color: inherit;
+  }
+
+  /* === Modo escuro padronizado === */
+  body.dark-mode section {
+    background-color: #1c1c1c;
+  }
+
+  /* === Botão Menu Mobile === */
+  .menu-toggle {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    color: #333;
+  }
+
+  /* === Menu Mobile Fullscreen === */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Quando o menu é ativado com JS */
+  .mobile-menu.active {
+    display: flex;
+  }
+  .close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .mobile-menu-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .mobile-menu-list li {
+    margin: 1.2rem 0;
+  }
+  
+  .mobile-menu-list a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .mobile-menu-list a:hover {
+    color: #b48dd3;
+  }
+  
+  #toggleThemeMobile {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 6px;
+  }
+  
+
+
+/* Estilo da marca personalizada */
+.logo-text .name {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    font-size: 1rem; /* Aumentamos para 1rem */
+    color: #333;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  
+  .logo-text .dev {
+    font-size: 0.85rem;
+    color: #e91e63;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  /* Ajuste para alinhamento em telas menores */
+  @media (max-width: 768px) {
+    .navbar .container {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .navbar-brand {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .navbar-brand i {
+      font-size: 1.4rem;
+    }
+  
+    .logo-text .name {
+      font-size: 0.85rem;
+    }
+  
+    .logo-text .dev {
+      font-size: 0.7rem;
+    }
+  
+    /* Botão menu e toggle mais alinhados */
+    .navbar-toggler,
+    #toggleTheme {
+      margin-left: 0.5rem;
+    }
+  }
+  
+  
+  /* Estilo para modo escuro */
+  body.dark-mode .logo-text .name {
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode .logo-text .dev {
+    color: #ff71a0;
+  }
+
+  
+  /* === Hero Section === */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(to right, #fef6f6, #f2f9f6);
+    color: #333;
+    padding-top: 80px;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+    /* === Seção Sobre Mim === */
+
+  .sobre-section h2 {
+    font-weight: 600;
+    color: #444;
+  }
+
+  .sobre-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+  }
+
+
+  /* === Botões === */
+  .btn-outline-primary {
+    border-color: #b48dd3;
+    color: #b48dd3;
+    transition: all 0.3s;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #b48dd3;
+    color: #fff;
+  }
+  
+  .btn-primary {
+    background-color: #a5d6d3;
+    border-color: #a5d6d3;
+  }
+  
+  .btn-primary:hover {
+    background-color: #85c5c2;
+    border-color: #85c5c2;
+  }
+
+  /* === Foto perfil - Sobre Mim === */
+  .profile-photo {
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    filter: brightness(1) contrast(1.05);
+  }
+
+  /* Animação suave ao passar o mouse */
+  .profile-photo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Ajuste modo escuro */
+  body.dark-mode .profile-photo {
+    filter: brightness(1.1) contrast(1.2) saturate(1.05);
+  }
+
+  /* === Seção Projetos === */
+  .projetos-section {
+    background-color: #fdfdfd;
+  }
+
+  .projetos-section h2 {
+    font-weight: 600;
+    color: #444;
+  }
+
+  .projetos-section .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .projetos-section .badge {
+    margin-right: 0.25rem;
+    margin-top: 0.5rem;
+  }
+
+  
+  body.dark-mode .projetos-section h2,
+  body.dark-mode .projetos-section p,
+  body.dark-mode .card-title,
+  body.dark-mode .card-text {
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode .card {
+    background-color: #222;
+    color: #f0f0f0;
+  }
+  
+  /* === Contato === */
+  .contato-section {
+    background-color: #fdfdfd;
+  }
+
+  .contato-section h2 {
+    font-weight: 600;
+    color: #444;
+  }
+
+  .contato-section p,
+  .contato-section label {
+    color: #555;
+  }
+
+  body.dark-mode .contato-section {
+    background-color: #1c1c1c;
+  }
+
+  body.dark-mode .contato-section h2,
+  body.dark-mode .contato-section p,
+  body.dark-mode .contato-section label {
+    color: #f0f0f0;
+  }
+
+  body.dark-mode .form-control {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border: 1px solid #444;
+  }
+
+  .btn-primary {
+    border-color: #b48dd3;
+    color: #b48dd3;
+    background-color: transparent;
+  }
+
+  .btn-primary:hover {
+    background-color: #b48dd3;
+    color: #fff;
+  }
+
+  /* === Botão de modo escuro (Dark Mode Toggle) === */
+#toggleTheme {
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover no modo claro */
+  #toggleTheme:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Modo escuro */
+  body.dark-mode #toggleTheme {
+    background-color: #333;
+    border-color: #444;
+    color: #ffd700;
+  }
+
+  @media (max-width: 768px) {
+    #toggleTheme {
+      display: none;
+    }
+  }
+  
+  
+  /* Hover no modo escuro */
+  body.dark-mode #toggleTheme:hover {
+    background-color: #444;
+  }
+  
+  /* === Seções === */
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  h2 {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* === Cards de Projeto === */
+  .card {
+    border: none;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-body {
+    flex-grow: 1;
+  }
+  
+  .card-footer {
+    margin-top: auto;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* === Formulário === */
+  form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+  }
+  
+  /* === Rodapé === */
+  footer {
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+  
+
+  /* === MODO ESCURO === */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .navbar,
+  .dark-mode footer {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
+  
+  .dark-mode .nav-link {
+    color: #ccc !important;
+  }
+  
+  .dark-mode .nav-link:hover {
+    color: #66d9ef !important;
+  }
+  
+  .dark-mode .hero {
+    background: linear-gradient(to right, #1e1e1e, #2e2e2e);
+  }
+  
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h5,
+  .dark-mode p {
+    color: #f5f5f5;
+  }
+  
+  .dark-mode .card {
+    background-color: #222;
+    color: #f5f5f5;
+  }
+  
+  .dark-mode .card .btn {
+    border-color: #66d9ef;
+    color: #66d9ef;
+  }
+  
+  .dark-mode .card .btn:hover {
+    background-color: #66d9ef;
+    color: #000;
+  }
+  
+  .dark-mode .form-control {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border: 1px solid #444;
+  }
+
+  
+  body.dark-mode .sobre-section p {
+    color: #ddd;
+  }
+  
+  body.dark-mode .sobre-section h2 {
+    color: #f5f5f5;
+  }
+  
+
+  /* === Navbar no modo escuro === */
+body.dark-mode .navbar {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #333;
+  }
+  
+  body.dark-mode .navbar-brand,
+  body.dark-mode .nav-link {
+    color: #f0f0f0 !important;
+  }
+  
+  body.dark-mode .nav-link:hover {
+    color: #66d9ef !important;
+  }
+  
+  body.dark-mode #toggleTheme {
+    background-color: #333;
+    border-color: #444;
+    color: #ffd700;
+  }
+
+  body.dark-mode .mobile-menu {
+    background-color: #121212;
+  }
+  
+  body.dark-mode .mobile-menu-list a {
+    color: #f0f0f0;
+  }
+  
+  body.dark-mode .mobile-menu-list a:hover {
+    color: #66d9ef;
+  }
+  
+  body.dark-mode .close-btn {
+    color: #f0f0f0;
+  }
+
+  /* === Card Footer no modo escuro === */
+  body.dark-mode .card-footer {
+    background-color: #222 !important;  /* mesma cor do card */
+    border-top: 1px solid #333 !important;
+  }
+
+  /* === Footer Social Icons === */
+  .social-link {
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .social-link:hover {
+    color: #0077b5; /* azul LinkedIn */
+  }
+
+  /* === Modo escuro para ícones do footer === */
+ /* === Ícones do Footer no modo escuro === */
+  body.dark-mode footer .social-icons a i {
+    color: #f0f0f0 !important;
+  }
+
+  body.dark-mode .social-link:hover {
+    color: #66d9ef;
+  }
+
+  
+  
