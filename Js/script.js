@@ -59,10 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
   if (typedText) {
     new Typed('#typed-text', {
       strings: [
-        'Tecnologia com propósito.',
-        'Desenvolvo pensando em pessoas,',
-        'Impacto e',
-        'Detalhes que fazem a diferença.'
+        'De ideias ao código,',
+        'soluções digitais sob medida.'
       ],
       typeSpeed: 30,
       backSpeed: 10,
