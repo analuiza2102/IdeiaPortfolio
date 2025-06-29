@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     new Typed('#typed-text', {
       strings: [
         'De ideias ao código,',
-        'soluções digitais sob medida.'
+        'Soluções digitais sob medida.'
       ],
       typeSpeed: 30,
       backSpeed: 10,
