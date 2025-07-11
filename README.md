@@ -5,7 +5,7 @@ Este é o meu portfólio pessoal como desenvolvedora, onde apresento projetos re
 
 ## Demonstração
 
-![Image](https://github.com/user-attachments/assets/70f98034-1238-4da4-9ea6-9bcc5fc9a6d9)
+![Image](https://github.com/user-attachments/assets/2d90056f-7a8e-4fd9-b6c4-6d023f453c23)
 
 ---
 
