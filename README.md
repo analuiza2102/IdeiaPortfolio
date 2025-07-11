@@ -2,6 +2,11 @@
 
 Este é o meu portfólio pessoal como desenvolvedora, onde apresento projetos reais desenvolvidos em diversas tecnologias como **Java**, **HTML/CSS/JavaScript**, **React**, **Power BI** e muito mais. Aqui você encontrará desde aplicações web e sistemas em Java até soluções de automação, dashboards e integrações com APIs.
 
+
+## Demonstração
+
+![Image](https://github.com/user-attachments/assets/70f98034-1238-4da4-9ea6-9bcc5fc9a6d9)
+
 ---
 
 ## ✨ Sobre Mim
