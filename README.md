@@ -32,7 +32,7 @@ A aplicação é composta pelas seguintes páginas:
 
 ## 🌐 Acesse o Portfólio Online
 
-🔗 [Clique aqui para visualizar o portfólio](https://analuiza2102.github.io/Portfolio2025/)
+🔗 [Clique aqui para visualizar o portfólio](https://analuiza2102.github.io/IdeiaPortfolio/)
 
 ---
 
